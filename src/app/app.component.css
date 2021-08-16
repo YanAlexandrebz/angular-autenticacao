@@ -1,0 +1,28 @@
+.nav-custom{
+    display: flex;
+    align-items: center;
+}
+
+.bg-nav{
+    background-color: transparent;
+}
+
+.btn-custom{
+    border-radius: 1em;
+}
+
+.btn-custom:hover{
+    background-color: #3C1053;
+    border: #3C1053;
+}
+
+.bg-custom{
+    margin: auto;
+    width: auto;
+    height: 1000px;
+    background-image: url('https://images.pexels.com/photos/3778477/pexels-photo-3778477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+
+
+
+

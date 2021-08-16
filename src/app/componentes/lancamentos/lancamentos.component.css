@@ -1,0 +1,13 @@
+.table-responsive{
+    min-height: .01%;
+    overflow-x: auto;
+    border: 0px !important;
+}
+
+.table-custom {
+    backdrop-filter: blur(45px);
+    background-color: transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(106, 107, 107, 0.03);
+    color: black;
+}

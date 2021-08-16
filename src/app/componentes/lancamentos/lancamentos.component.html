@@ -1,0 +1,28 @@
+<div class="table-responsive-lg">
+    <table class="table table-custom">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Data</th>
+            <th scope="col">Hora</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Localização</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let lancamento of lancamentos">
+            <th scope="row">{{lancamento.id}}</th>
+            <td>{{lancamento.data | data | date:"dd/MM/yyyy"}}</td>
+            <td>{{lancamento.data | hora}}</td>
+            <td>{{lancamento.tipo | tipo}}</td>
+            <td>
+              <a [href]="urlLocalizacao(lancamento.localizacao)"
+                  target="_blank">
+                  {{lancamento.localizacao}}
+              </a>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+</div>
+

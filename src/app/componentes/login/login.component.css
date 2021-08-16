@@ -1,0 +1,15 @@
+
+.mask-custom {
+    backdrop-filter: blur(45px);
+    background-color: transparent;
+    border-radius: 3em;
+    border: 1px solid rgba(255,255,255,.1);
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(106, 107, 107, 0.03);
+}
+
+.mask-custom.h1 {
+    color: white;
+}
+
+

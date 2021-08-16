@@ -1,0 +1,53 @@
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-7 col-xl-6">
+            <div class="card mask-custom">
+                <div class="card-body p-5 text-black">
+
+                    <div class="my-4">
+
+                        <h1 class="text-center mb-5">
+                            <i class="bi bi-box-arrow-in-left"></i>
+                            Login
+                        </h1>
+                        <form [formGroup]="form" action="GET" class="formulario" novalidate>
+        
+                            <!-- EMAIL -->
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com"
+                                    formControlName="email" [ngClass]="campoValidacao('email')">
+                                <label for="floatingInputValue">Email</label>
+                                <div class="invalid-feedback">
+                                    <i class="bi bi-asterisk">
+                                        Email é obrigatório
+                                    </i>  
+                                </div>
+                            </div>
+
+                            <!-- SENHA -->
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="senha" formControlName="senha"
+                                    placeholder="senha" [ngClass]="campoValidacao('senha')">
+                                <label for="floatingInput">Senha</label>
+                                <div class="invalid-feedback">
+                                    <i class="bi bi-asterisk">
+                                        Senha é obrigatório e deve conter, no mínimo, 6 caracteres
+                                    </i>
+                                </div>
+                            </div>
+
+                            <!-- BUTTON LOGAR / LIMPAR -->
+                            <div class="d-grid gap-2 col-6 mx-auto text-center py-5">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block mb-4" (click)="logar()">
+                                    <i class="bi bi-box-arrow-in-left"></i></button>
+                                    
+                                <button type="button" class="btn btn-outline-danger" value="Limpar"
+                                    (click)="limparFormulario()">Limpar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
