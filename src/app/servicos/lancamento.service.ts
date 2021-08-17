@@ -20,7 +20,7 @@ export class LancamentoService {
     */
     const id = this.httpService.obterIdUsuario();
     return this.http.get(
-      env.apiBaseUrl + 'api/lancamentos/funcionario/' + id,
+      env.apiBaseUrl + 'api/lancamentos/funcionario/' + id + '?sort=id&dir=DESC',
       this.httpService.headers()
     );
   }

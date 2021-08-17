@@ -1,5 +1,8 @@
 <div class="table-responsive-lg">
-    <table class="table table-custom">
+  <p>Data e Hora: {{ dataHoraAtual }}</p>
+  <p><button (click)="atualizarDataHora()">Atualizar data</button></p>  
+  <p>Data em tempo real: {{ dataTempoReal }}</p>
+  <table class="table table-custom">
         <thead>
           <tr>
             <th scope="col">#</th>
