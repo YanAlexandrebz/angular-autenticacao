@@ -1,7 +1,12 @@
 <div class="table-responsive-lg">
   <p>Data e Hora: {{ dataHoraAtual }}</p>
-  <p><button (click)="atualizarDataHora()">Atualizar data</button></p>  
+  <p>
+    <button class="btn btn-info" (click)="atualizarDataHora()">
+    <i class="bi bi-clock-history"> Refresh</i>
+  </button>
+</p>  
   <p>Data em tempo real: {{ dataTempoReal }}</p>
+  
   <table class="table table-custom">
         <thead>
           <tr>
@@ -27,5 +32,10 @@
           </tr>
         </tbody>
     </table>
+    <p>
+      <button class="btn btn-success" (click)="downloadCSV()">
+        <i class="fas fa-file-csv fa-1x"> Download</i>
+      </button>
+    </p>
 </div>
 

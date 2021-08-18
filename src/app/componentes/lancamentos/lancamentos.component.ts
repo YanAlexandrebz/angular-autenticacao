@@ -3,6 +3,7 @@ import { Subscription } from 'rxjs';
 import { Lancamento } from 'src/app/models/lancamento.model';
 import { DataHoraService } from 'src/app/servicos/data-hora.service';
 import { LancamentoService } from 'src/app/servicos/lancamento.service';
+import { saveAs } from 'file-saver';
 
 @Component({
   selector: 'app-lancamentos',
@@ -46,6 +47,10 @@ export class LancamentosComponent implements OnInit, OnDestroy {
 
   atualizarDataHora(){
     this.dataHoraService.atualizarDataHora();
+  }
+
+  downloadCSV() {
+    this.lancamentoService.downloadCSV(this.lancamentos);
   }
 
 }
